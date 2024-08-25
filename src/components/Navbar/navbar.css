@@ -1,4 +1,3 @@
-/* Styles for the entire navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -16,7 +15,6 @@
     cursor: pointer;
   }
   
-  /* Default nav-links (for larger screens) */
   .nav-links {
     display: flex;
     list-style: none;
@@ -35,7 +33,7 @@
   .navbar-end {
     display: flex;
     align-items: center;
-    gap: 15px; /* Space between icons and buttons */
+    gap: 15px; 
   }
   
   .social-icons {
@@ -66,14 +64,11 @@
     display: none;
   }
   
-  /* Styles for screens below 1300px */
   @media (max-width: 1300px) {
-    /* Hide the default nav-links for smaller screens */
     .nav-links {
       display: none;
     }
   
-    /* Toggle menu links */
     .nav-links-toggle {
       list-style-type: none;
       padding: 0;
@@ -102,9 +97,8 @@
       background-color: #555;
     }
   
-    /* Style adjustments for navbar on smaller screens */
     .navbar-end {
-      gap: 20px; /* Increase the gap between elements */
+      gap: 20px; 
     }
   
     .navbarMenu {
