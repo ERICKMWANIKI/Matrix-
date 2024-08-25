@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import HomePage from "./components/HomePage.jsx";
 import ImageCarousel from "./components/ImageCarousel";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar/Navbar.jsx";
 import BeamBlock from "./components/BeamBlock";
 import HollowBlocks from "./components/HollowBlocks";
 import PavingBlocks from "./components/PavingBlocks";
