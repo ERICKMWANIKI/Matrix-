@@ -1,18 +1,13 @@
 import React from "react";
-import Navbar from "./Navbar.jsx";
+import ImageCarousel from "./ImageCarousel";
+
 const HomePage = () => {
   return (
-    <div>
-      <Navbar />
-      <header className="hero-section">
-        <h1>MATRIX</h1>
-        <h2>Precast Concrete</h2>
-        <p>
-          We offer a comprehensive range of precast concrete solutions designed
-          to meet the diverse needs of the Kenyan construction industry.
-        </p>
-      </header>
-      {/* Add other sections here */}
+    <div className="homepage">
+      {/* HomePage content */}
+      <h1>Welcome to Matrix Precast Concrete</h1>
+      <p>Your solution for quality precast concrete products.</p>
+      <ImageCarousel />
     </div>
   );
 };

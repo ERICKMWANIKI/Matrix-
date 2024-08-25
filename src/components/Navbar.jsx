@@ -1,5 +1,6 @@
 import React from "react";
 import { FaInstagram, FaTwitter, FaWhatsapp, FaFacebook } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -9,25 +10,28 @@ const Navbar = () => {
       </div>
       <ul className="nav-links">
         <li>
-          <a href="/beam-block">Beam & Block</a>
+          <Link to="/beam-block">Beam & Block</Link>
         </li>
         <li>
-          <a href="/hollow-blocks">Hollow Blocks</a>
+          <Link to="/hollow-blocks">Hollow Blocks</Link>
         </li>
         <li>
-          <a href="/paving-blocks">Paving Blocks</a>
+          <Link to="/paving-blocks">Paving Blocks</Link>
         </li>
         <li>
-          <a href="/road-kerb">Road Kerb & Accessories</a>
+          <Link to="/road-kerb">Road Kerb & Accessories</Link>
         </li>
         <li>
-          <a href="/services">Services</a>
+          <Link to="/services">Services</Link>
         </li>
         <li>
-          <a href="/gallery">Gallery</a>
+          <Link to="/gallery">Gallery</Link>
         </li>
         <li>
-          <a href="/downloads">Downloads</a>
+          <Link to="/downloads">Downloads</Link>
+        </li>
+        <li>
+          <Link to="/signup">Sign Up</Link>
         </li>
       </ul>
       <div className="social-icons">
@@ -60,8 +64,16 @@ const Navbar = () => {
           <FaFacebook />
         </a>
       </div>
-      <div className="sign-in">
-        <button>Sign In</button>
+      <div className="auth-buttons">
+        <Link to="/login">
+          <button>Log In</button>
+        </Link>
+        <Link to="/signup">
+          <button>SignUp</button>
+        </Link>
+        <Link to="/contactus">
+          <button>ContactUs</button>
+        </Link>
       </div>
     </nav>
   );

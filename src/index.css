@@ -1,3 +1,23 @@
+/* HomePage.css */
+.homepage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.homepage h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.homepage p {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -89,3 +109,340 @@
 .image-carousel {
   margin-bottom: 50px;
 }
+
+/* login.css */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: white;
+}
+
+.login-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.login-form-container {
+  padding: 20px;
+}
+
+.signin-options {
+  text-align: center;
+}
+
+.signin-option {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  width: 250px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.icon {
+  font-size: 24px;
+  color: #032541;
+  margin-right: 10px;
+}
+
+.signup-link {
+  text-decoration: none;
+  color: #007BFF;
+  cursor: pointer;
+}
+
+.signin-form {
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #032541;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  margin-bottom: 1rem;
+}
+
+.message {
+  color: red;
+  margin-bottom: 1rem;
+}
+
+.input-group {
+  margin-bottom: 1rem;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.password-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.toggle-password {
+  margin-left: 10px;
+  cursor: pointer;
+  color: #007BFF;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #d32f2f;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+
+
+/* contact us .css */
+.container {
+  display: flex;
+  height: 100vh;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9; 
+}
+
+.formWrapper {
+  display: flex;
+  width: 100%;
+  max-width: 800px;
+  background-color: #fff; 
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.imageSection {
+  flex: 1;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageSection img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.formSection {
+  flex: 1;
+  padding: 1rem;
+}
+
+.backButton {
+  margin-bottom: 1rem;
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+
+.formHeader {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #333; 
+}
+
+.formField {
+  margin: 0.75rem 0; 
+  display: flex;
+  flex-direction: column;
+}
+
+.formField label {
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+  color: #666; 
+}
+
+.formField input,
+.formField select {
+  padding: 0.75rem; 
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem; 
+}
+
+.formField input:focus,
+.formField select:focus {
+  border-color: #007bff; 
+  outline: none;
+}
+
+.error {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: 0.25rem; 
+}
+
+.passwordToggle {
+  margin-top: 0.5rem;
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+
+.submitButton {
+  margin-top: 1rem;
+  background-color: #d32f2f;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+  background-color: #c62828; 
+}
+
+.snackbar {
+  position: fixed;
+  top: 1rem; 
+  left: 50%;
+  transform: translateX(-50%); 
+  padding: 1rem;
+  text-align: center;
+  color: white;
+  border-radius: 4px;
+}
+
+.snackbar.success {
+  background-color: #4CAF50;
+}
+
+.snackbar.error {
+  background-color: #D32F2F;
+}
+
+.snackbarClose {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #e63946; 
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+p {
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.contact-info {
+  margin-bottom: 30px;
+  padding: 10px;
+  border: 1px solid #e63946;
+  border-radius: 8px;
+}
+
+.contact-info h3 {
+  color: #e63946;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.success-message {
+  color: #28a745;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+textarea {
+  min-height: 120px;
+}
+
+.submit-button {
+  background-color: #e63946; 
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #d32f2f; 
+}
+
