@@ -1,0 +1,146 @@
+/* Styles for the entire navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #333;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  
+  .logoImage {
+    width: 100px;
+    cursor: pointer;
+  }
+  
+  /* Default nav-links (for larger screens) */
+  .nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+  }
+  
+  .nav-links li {
+    margin-right: 20px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .navbar-end {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between icons and buttons */
+  }
+  
+  .social-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .social-icons a {
+    color: white;
+    font-size: 1.5em;
+  }
+  
+  .sign-in {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .sign-in:hover {
+    background-color: #0056b3;
+  }
+  
+  .navbarMenu {
+    display: none;
+  }
+  
+  /* Styles for screens below 1300px */
+  @media (max-width: 1300px) {
+    /* Hide the default nav-links for smaller screens */
+    .nav-links {
+      display: none;
+    }
+  
+    /* Toggle menu links */
+    .nav-links-toggle {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  
+    .nav-links-toggle li {
+      margin: 5px 0;
+    }
+  
+    .nav-links-toggle a {
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      width: 100%;
+      background-color: #444;
+      border-radius: 5px;
+      text-align: left;
+    }
+  
+    .nav-links-toggle a:hover {
+      background-color: #555;
+    }
+  
+    /* Style adjustments for navbar on smaller screens */
+    .navbar-end {
+      gap: 20px; /* Increase the gap between elements */
+    }
+  
+    .navbarMenu {
+      display: flex;
+      cursor: pointer;
+    }
+  
+    .navbarMenuContainerToggle {
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background-color: #333;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      width: 200px;
+    }
+  
+    .navbarMenuContainerLinks ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+  
+    .navbarMenuContainerLinks ul li {
+      margin-bottom: 10px;
+    }
+  
+    .navbarMenuContainerLinks ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+  
+    .navbarMenuContainerLinks .sign-in {
+      margin-top: 10px;
+      background-color: #007bff;
+    }
+  }
+  
